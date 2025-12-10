@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infinity Nikki Bingo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+<h1>Infinity Nikki Bingo</h1>
+
+<div id="explanation">
+    <p>This is a bingo website based on the goals that Nyxzies
+        made for her bingo for Infinity Nikki.</p>
+    <p>This website is still currently in development.
+        <br>At this point in time, only a singleplayer option is available.
+        <br>Stay tuned to see if I can figure out how to make it multiplayer.</p>
+    <p><b>NOTE: </b>I have not yet made a way for multiple people to mark the same square
+    ... oops.
+    <br>Yes I did accidentally make it into a lockout bingo
+        (two people cannot get the same goal)
+    <br>I did say the multiplayer aspect wasn't finished wasn't you paying attention?</p>
+</div>
+
+<div class="container">
+    <button id="box1" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box1', getColor())">1</button>
+    <button id="box2" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box2', getColor())">2</button>
+    <button id="box3" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box3', getColor())">3</button>
+    <button id="box4" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box4', getColor())">4</button>
+    <button id="box5" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box5', getColor())">5</button>
+    <button id="box6" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box6', getColor())">6</button>
+    <button id="box7" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box7', getColor())">7</button>
+    <button id="box8" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box8', getColor())">8</button>
+    <button id="box9" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box9', getColor())">9</button>
+    <button id="box10" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box10', getColor())">10</button>
+    <button id="box11" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box11', getColor())">11</button>
+    <button id="box12" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box12', getColor())">12</button>
+    <button id="box13" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box13', getColor())">FREE SPACE</button>
+    <button id="box14" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box14', getColor())">14</button>
+    <button id="box15" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box15', getColor())">15</button>
+    <button id="box16" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box16', getColor())">16</button>
+    <button id="box17" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box17', getColor())">17</button>
+    <button id="box18" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box18', getColor())">18</button>
+    <button id="box19" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box19', getColor())">19</button>
+    <button id="box20" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box20', getColor())">20</button>
+    <button id="box21" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box21', getColor())">21</button>
+    <button id="box22" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box22', getColor())">22</button>
+    <button id="box23" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box23', getColor())">23</button>
+    <button id="box24" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box24', getColor())">24</button>
+    <button id="box25" class="gridbutton" value="empty"
+            onclick="changeBackgroundColor('box25', getColor())">25</button>
+</div>
+
+<div>
+    <p>The 'Set Board' button locks the board so it cannot be randomized and locks the
+        color. So if you wanted to do multiplayer (on the same device/page)
+        then you SHOULD NOT click this button.</p>
+</div>
+
+<div class="buttongroup">
+    <button onclick="getRandomGoals(value)" class="button" id="button1" value="false">
+        Randomize</button>
+    <button onclick="setGoals()" class="button" id="button2">Set Board</button>
+</div>
+
+<div class="dropdown">
+    <label for="colorPick">Pick a color</label>
+    <select name="colorPick" id="colorPick" disabled>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+    </select>
+</div>
+
+<div style="padding: 10px;">
+    <a href="goalList.html">Rules and Objectives</a>
+</div>
+
+<div class="Copyright">
+    <p>Infinity Nikki is owned by Infold game.</p>
+    <p>This bingo website was made by Bluetackontire.</p>
+</div>
+
+</body>
+</html>
